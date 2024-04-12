@@ -1,0 +1,12 @@
+.layout {
+  display: grid;
+  grid-template-rows: auto 1fr auto;
+  overflow: hidden;
+  min-height: 100vh;
+  z-index: 0;
+}
+
+.main {
+  padding: 0 0 3em;
+  z-index: 0;
+}
