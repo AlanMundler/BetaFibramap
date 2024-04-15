@@ -109,7 +109,7 @@ function NavBar() {
             </li>
             <li>
               <Link
-                href="/new"
+                href="/provider"
                 className="flex items-center p-2 text-gray-900 rounded-lg dark:text-white hover:bg-gray-100 dark:hover:bg-gray-700 group"
               >
                 <svg
@@ -128,7 +128,9 @@ function NavBar() {
                   />
                 </svg>
 
-                <span className="flex-1 ms-3 whitespace-nowrap">Proveedores</span>
+                <span className="flex-1 ms-3 whitespace-nowrap">
+                  Proveedores
+                </span>
               </Link>
             </li>
             <li>
@@ -156,9 +158,11 @@ function NavBar() {
               </Link>
             </li>
             <li>
-              <Link
-                href="/review"
-                className="flex items-center p-2 text-gray-900 rounded-lg dark:text-white hover:bg-gray-100 dark:hover:bg-gray-700 group"
+              <button
+                type="button"
+                class="flex items-center w-full p-2 text-base text-gray-900 transition duration-75 rounded-lg group hover:bg-gray-100 dark:text-white dark:hover:bg-gray-700"
+                aria-controls="dropdown-example"
+                data-collapse-toggle="dropdown-example"
               >
                 <svg
                   className="w-6 h-6 text-gray-800 dark:text-white"
@@ -175,9 +179,79 @@ function NavBar() {
                     clipRule="evenodd"
                   />
                 </svg>
+                <span class="flex-1 ms-3 text-left rtl:text-right whitespace-nowrap">
+                  Opiniones
+                </span>
+                <svg
+                  class="w-3 h-3"
+                  aria-hidden="true"
+                  xmlns="http://www.w3.org/2000/svg"
+                  fill="none"
+                  viewBox="0 0 10 6"
+                >
+                  <path
+                    stroke="currentColor"
+                    stroke-linecap="round"
+                    stroke-linejoin="round"
+                    stroke-width="2"
+                    d="m1 1 4 4 4-4"
+                  />
+                </svg>
+              </button>
+              <ul id="dropdown-example" class="hidden py-2 space-y-2">
+                <li>
+                  <Link
+                    href="/review"
+                    className="flex items-center p-2 text-gray-900 rounded-lg dark:text-white hover:bg-gray-100 dark:hover:bg-gray-700 group"
+                  >
+                    <svg
+                      class="w-6 h-6 text-gray-800 dark:text-white"
+                      aria-hidden="true"
+                      xmlns="http://www.w3.org/2000/svg"
+                      width="24"
+                      height="24"
+                      fill="currentColor"
+                      viewBox="0 0 24 24"
+                    >
+                      <path
+                        fill-rule="evenodd"
+                        d="M5 3a2 2 0 0 0-2 2v5h18V5a2 2 0 0 0-2-2H5ZM3 14v-2h18v2a2 2 0 0 1-2 2h-6v3h2a1 1 0 1 1 0 2H9a1 1 0 1 1 0-2h2v-3H5a2 2 0 0 1-2-2Z"
+                        clip-rule="evenodd"
+                      />
+                    </svg>
 
-                <span className="flex-1 ms-3 whitespace-nowrap">Opiniones</span>
-              </Link>
+                    <span className="flex-1 ms-3 whitespace-nowrap">
+                      Servicio
+                    </span>
+                  </Link>
+                </li>
+                <li>
+                  <Link
+                    href="/promo"
+                    className="flex items-center p-2 text-gray-900 rounded-lg dark:text-white hover:bg-gray-100 dark:hover:bg-gray-700 group"
+                  >
+                    <svg
+                      class="w-6 h-6 text-gray-800 dark:text-white"
+                      aria-hidden="true"
+                      xmlns="http://www.w3.org/2000/svg"
+                      width="24"
+                      height="24"
+                      fill="currentColor"
+                      viewBox="0 0 24 24"
+                    >
+                      <path
+                        fill-rule="evenodd"
+                        d="M20.29 8.567c.133.323.334.613.59.85v.002a3.536 3.536 0 0 1 0 5.166 2.442 2.442 0 0 0-.776 1.868 3.534 3.534 0 0 1-3.651 3.653 2.483 2.483 0 0 0-1.87.776 3.537 3.537 0 0 1-5.164 0 2.44 2.44 0 0 0-1.87-.776 3.533 3.533 0 0 1-3.653-3.654 2.44 2.44 0 0 0-.775-1.868 3.537 3.537 0 0 1 0-5.166 2.44 2.44 0 0 0 .775-1.87 3.55 3.55 0 0 1 1.033-2.62 3.594 3.594 0 0 1 2.62-1.032 2.401 2.401 0 0 0 1.87-.775 3.535 3.535 0 0 1 5.165 0 2.444 2.444 0 0 0 1.869.775 3.532 3.532 0 0 1 3.652 3.652c-.012.35.051.697.184 1.02ZM9.927 7.371a1 1 0 1 0 0 2h.01a1 1 0 0 0 0-2h-.01Zm5.889 2.226a1 1 0 0 0-1.414-1.415L8.184 14.4a1 1 0 0 0 1.414 1.414l6.218-6.217Zm-2.79 5.028a1 1 0 1 0 0 2h.01a1 1 0 1 0 0-2h-.01Z"
+                        clip-rule="evenodd"
+                      />
+                    </svg>
+
+                    <span className="flex-1 ms-3 whitespace-nowrap">
+                      Promociones
+                    </span>
+                  </Link>
+                </li>
+              </ul>
             </li>
             <li>
               <Link
@@ -200,7 +274,9 @@ function NavBar() {
                   />
                 </svg>
 
-                <span className="flex-1 ms-3 whitespace-nowrap">Herramientas</span>
+                <span className="flex-1 ms-3 whitespace-nowrap">
+                  Herramientas
+                </span>
               </Link>
             </li>
             <li>

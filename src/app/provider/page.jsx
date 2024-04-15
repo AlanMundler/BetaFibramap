@@ -1,5 +1,5 @@
-import { prisma } from "../libs/prisma";
-import TaskCard from "../components/TaskCard";
+import { prisma } from "../../libs/prisma";
+import TaskCard from "../../components/TaskCard";
 
 async function loadServicios() {
   return await prisma.servicio.findMany();

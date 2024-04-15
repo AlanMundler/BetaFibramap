@@ -27,7 +27,7 @@
     ".next/types/**/*.ts",
     "**/*.ts",
     "**/*.tsx"
-, "src/components/Disqus.jsx"  ],
+, "src/components/Disqus.jsx", "src/app/api/chat/route.ts"  ],
   "exclude": [
     "node_modules"
   ]

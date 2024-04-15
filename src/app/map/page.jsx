@@ -13,7 +13,7 @@ const paz = [-31.413758, -64.167203];
 export default function Home() {
   return (
     <Layout>
-      <section className="container sm:ml-64">
+      <section className=" sm:ml-64 sm:mr-36">
         <h1 className=" ml-4 mr-4 relative overflow-x-auto text-xl font-semibold dark:text-white h-full px-3 py-4 bg-gray-50 dark:bg-gray-800">
           Mapa de Proveedores
         </h1>
