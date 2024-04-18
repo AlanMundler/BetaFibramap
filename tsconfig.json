@@ -27,7 +27,7 @@
     ".next/types/**/*.ts",
     "**/*.ts",
     "**/*.tsx"
-, "src/components/Disqus.jsx", "src/app/api/chat/route.ts"  ],
+, "src/components/Disqus.jsx", "src/app/api/chat/route.ts", "src/app/page.jsx", "src/app/compare/page.jsx", "src/components/Compare.jsx", "src/app/velocidad/page.tsx", "src/components/Velocidad.jsx"  ],
   "exclude": [
     "node_modules"
   ]

@@ -2,6 +2,7 @@
 import Layout from "../../components/Layout";
 import Map from "../../components/Map";
 import styles from "../Home.module.scss";
+import Link from "next/link";
 
 const DEFAULT_CENTER = [-31.419797, -64.188566];
 const centro = [-31.416895, -64.183833];
@@ -18,7 +19,7 @@ export default function Home() {
           Mapa de Proveedores
         </h1>
 
-        <div className=" ml-4 mr-4 relative overflow-x-auto px-2 py-2 bg-gray-50 dark:bg-gray-800">
+        <div className=" mt-4 ml-4 mr-4 relative overflow-x-auto px-2 py-2 bg-gray-50 dark:bg-gray-800">
           <Map
             className={styles.homeMap}
             width="800"
@@ -31,65 +32,83 @@ export default function Home() {
                 <TileLayer url="https://{s}.basemaps.cartocdn.com/dark_all/{z}/{x}/{y}{r}.png" />
                 <Marker position={centro}>
                   <Popup>
-                    <h1 class="bg-danger text-xl font-rale font-hairline">
-                      Barrio Centro
-                    </h1>
+                    <h1 class="text-xl font-sans font-bold">Centro</h1>
                     <br />
-                    Claro
-                    <br />
-                    Personal
-                    <br />
-                    Iplan
+                    <Link href="/provider/Claro">
+                      <span className=" text-red-600 text-base font-sans">Claro<br/></span>
+                    </Link>
+                    
+                    <Link href="/provider/Personal">
+                      <span className=" text-blue-600 text-base font-sans">Personal<br/></span>
+                      </Link>
+                      <Link href="/provider/Iplan">
+                      <span className=" text-pink-600 text-base font-sans">Iplan<br/></span>
+                      </Link>
                   </Popup>
                 </Marker>
                 <Marker position={nueva}>
                   <Popup>
-                    <h1 class="bg-danger text-xl font-rale font-hairline">
-                      Barrio Nueva Cordoba
-                    </h1>
+                    <h1 class="text-xl font-bold font-sans">Nueva Cordoba</h1>
                     <br />
-                    Personal
-                    <br />
-                    Iplan
+                    <Link href="/provider/Claro">
+                      <span className=" text-red-600 text-base font-sans">Claro<br/></span>
+                    </Link>
+                    
+                    <Link href="/provider/Personal">
+                      <span className=" text-blue-600 text-base font-sans">Personal<br/></span>
+                      </Link>
+                      <Link href="/provider/Iplan">
+                      <span className=" text-pink-600 text-base font-sans">Iplan<br/></span>
+                      </Link>
                   </Popup>
                 </Marker>
                 <Marker position={guemes}>
                   <Popup>
-                    <h1 class="bg-danger text-xl font-rale font-hairline">
-                      Barrio Guemes
-                    </h1>
+                    <h1 class="text-xl font-bold font-sans">Guemes</h1>
                     <br />
-                    Claro
-                    <br />
-                    Personal
-                    <br />
-                    Iplan
+                    <Link href="/provider/Claro">
+                      <span className=" text-red-600 text-base font-sans">Claro<br/></span>
+                    </Link>
+                    
+                    <Link href="/provider/Personal">
+                      <span className=" text-blue-600 text-base font-sans">Personal<br/></span>
+                      </Link>
+                      <Link href="/provider/Iplan">
+                      <span className=" text-pink-600 text-base font-sans">Iplan<br/></span>
+                      </Link>
                   </Popup>
                 </Marker>
                 <Marker position={alberdi}>
                   <Popup>
-                    <h1 class="bg-danger text-xl font-rale font-hairline">
-                      Barrio Alberdi
-                    </h1>
+                    <h1 class="text-xl font-bold font-sans">Alberdi</h1>
                     <br />
-                    Claro
-                    <br />
-                    Personal
-                    <br />
-                    Iplan
+                    <Link href="/provider/Claro">
+                      <span className=" text-red-600 text-base font-sans">Claro<br/></span>
+                    </Link>
+                    
+                    <Link href="/provider/Personal">
+                      <span className=" text-blue-600 text-base font-sans">Personal<br/></span>
+                      </Link>
+                      <Link href="/provider/Iplan">
+                      <span className=" text-pink-600 text-base font-sans">Iplan<br/></span>
+                      </Link>
                   </Popup>
                 </Marker>
                 <Marker position={paz}>
                   <Popup>
-                    <h1 class="bg-danger text-xl font-rale font-hairline">
-                      Barrio Gral Paz
-                    </h1>
-                    <br />
-                    Claro
-                    <br />
-                    Personal
-                    <br />
-                    Iplan
+                    <h1 class=" text-xl font-bold font-sans">Gral Paz</h1>
+                    <br/>
+                    <Link href="/provider/Claro">
+                      <span className=" text-red-600 text-base font-sans">Claro<br/></span>
+                    </Link>
+                    
+                    <Link href="/provider/Personal">
+                      <span className=" text-blue-600 text-base font-sans">Personal<br/></span>
+                      </Link>
+                      <Link href="/provider/Iplan">
+                      <span className=" text-pink-600 text-base font-sans">Iplan<br/></span>
+                      </Link>
+                   
                   </Popup>
                 </Marker>
               </>

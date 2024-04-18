@@ -1,20 +1,13 @@
-import { prisma } from "../../libs/prisma";
-import TaskCard from "../../components/TaskCard";
-
-
+import { prisma } from "../../../libs/prisma";
+import TaskCardAdmin from "../../../components/TaskCardAdmin";
 
 async function loadServicios() {
-  return await prisma.servicio.findMany({
-    orderBy: {
-      proveedor: 'asc', // Sort users by name in ascending order
-    },
-  
-  });
+  return await prisma.servicio.findMany();
 }
 
 export const dynamic = "force-dynamic";
 
-async function ProviderPage() {
+async function AdminPage() {
   const servicio = await loadServicios();
 
   return (
@@ -24,11 +17,11 @@ async function ProviderPage() {
       </h1>
       <div>
         {servicio.map((servicio) => (
-          <TaskCard servicio={servicio} key={servicio.id} />
+          <TaskCardAdmin servicio={servicio} key={servicio.id} />
         ))}
       </div>
     </section>
   );
 }
 
-export default ProviderPage;
+export default AdminPage;

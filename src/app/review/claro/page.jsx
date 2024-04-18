@@ -5,8 +5,8 @@ import Link from "next/link";
 function ReviewClaroPage() {
   return (
     <section className="relative overflow-x-auto h-full sm:ml-64 sm:mr-36">
-      <h1 className=" mb-4 text-xl font-semibold dark:text-white px-3 py-4  bg-gray-50 dark:bg-gray-800 ">
-        Opiniones
+      <h1 className="ml-4 mr-4 mb-4 text-xl font-semibold dark:text-white px-3 py-4  bg-gray-50 dark:bg-gray-800 ">
+        Opiniones Claro
       </h1>
       <div class="flex mb-4 justify-center" role="group">
         <Link
@@ -31,7 +31,7 @@ function ReviewClaroPage() {
           Iplan
         </Link>
       </div>
-      <div className="  px-3 py-4  bg-gray-50 dark:bg-gray-800">
+      <div className=" ml-4 mr-4 px-3 py-4  bg-gray-50 dark:bg-gray-800">
         <p className=" mb-4 text-l font-semibold dark:text-white">
           En esta seccion los comentarios van dirigidos hacia servicio de fibra
           optica de Claro.
@@ -39,7 +39,7 @@ function ReviewClaroPage() {
         <p className=" mb-4 text-l font-semibold dark:text-white">
           Recomendaciones a la hora de comentar:
         </p>
-        <ul class="space-y-4 text-left text-gray-500 dark:text-gray-400">
+        <ul class="mb-4 space-y-4 text-left text-gray-500 dark:text-gray-400">
           <li class="flex items-center space-x-3 rtl:space-x-reverse">
             <svg
               class="flex-shrink-0 w-3.5 h-3.5 text-green-500 dark:text-green-400"
